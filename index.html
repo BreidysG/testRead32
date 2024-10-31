@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 32</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                El soldado y el perro
+                <br><br>
+                En un lejano país un soldado luchaba día y noche por permanecer de pie y poder salvar su vida; pues la guerra habrá sido tan cruel que sus compañeros habían perecido. Sólo lo animaba la esperanza de encontrar el camino de regreso a casa y poder abrazar a su querida madre. Aquella mujer sencilla pero de mirada profunda y tierna que esperaba con ansia el retorno de su amado hijo.
+                <br><br>
+                Jim era un joven voluntario que dejó su pueblo con el deseo de poder contribuir a la libertad de su patria.
+                <br><br>
+                El enemigo había atacado de noche pues conocía muy bien el territorio. Jim y diez compañeros más entre ellos el sargento Grimaldo no habían tenido tiempo de tomar sus armas, la lucha fue terrible y desigual pues los atrapó desprevenidos. Jim, Grimaldo y el grupo de soldados tuvieron que refugiarse entre las montañas en espera de ayuda.
+                <br><br>
+                Una noche cuando estaban dormidos y Jim hacía su ronda se encontró con un perro lobo.
+                <br><br>
+                El perro miraba de reojo a Jim. El soldado se acercó sigilosamente y agarró con cuidado el lomo del perro y empezó a acariciarlo. El animal en un inicio rechazó el cariño, y quiso morderlo pero luego lo aceptó.
+                <br><br>
+                Todas las noches Jim y el perro jugueteaban convirtiéndose en buenos amigos.
+                <br><br>
+                La guerra continuaba, mientras que ellos esperaban la ayuda oportuna y las órdenes a seguir.
+                <br><br>
+                Tan pronto apareció una tropa se reincorporaron a ella y continuaron su camino.
+                <br><br>
+                Vinky que así lo llamó observó la partida de Jim, quien no tuvo más remedio que dejarlo y seguir su marcha.
+                <br><br>
+                Cerca de un rio Jim y la tropa descansaron y no se dieron cuenta de que Vinky los venía siguiendo.
+                <br><br>
+                Al atardecer cuando se preparaban para acampar, el vigilante divisó una tropa enemiga. Todos se prepararon para la lucha, la cual fue pareja.
+                <br><br>
+                Sin darse cuenta Jim iba a recibir una bala por la espalda cuando de pronto se atravesó velozmente el perro, el cual cayó herido, el joven se sorprendió y reaccionó defendiéndose oportunamente.
+                <br><br>
+                Al llegar al lado de su querido amigo éste respiraba con dificultad y empezó a lamer la mano de su camarada, como queriendo decirle aquí estoy. Más Jim entró en desesperación y empezó a gritar con angustia, Grimaldo su amigo lo consolaba.
+                <br><br>
+                No comprendía como aquel ser indefenso pudo salvarle la vida y moría lentamente sin poder hacer nada. La batalla fue ganada por su tropa y estaban logrando hacer retroceder al enemigo.
+                <br><br>
+                Fue entonces cuando el joven soldado decidió retirarse de aquella cruel guerra y retornar a casa.
+                <br><br>
+                Cogió a su querido amigo y lo enterró. En su tumba colocó un letrero que decía:
+                <br><br>
+                "Mi vida te la debo, inolvidable amigo VINKY"
+                <br><br>
+            </p>
+                     
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
